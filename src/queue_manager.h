@@ -17,7 +17,8 @@ el programa que executarà el mòdul, rep els missatges per la seva entrada esta
 int queue_close(queue_handler_t handler);
 qstatus_t queue_get_state(queue_handler_t handler);
 int queue_enqueue(queue_handler_t handler, const char *msg);
-//if there are more active process than numProc it returns 1
+//returns queue response read_fd
+//if there are more active process than numProc it returns -1
 
 
 #endif
